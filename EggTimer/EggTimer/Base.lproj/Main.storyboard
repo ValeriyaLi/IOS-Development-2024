@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="49u-Ex-s8a">
+                                <rect key="frame" x="20" y="840" width="390" height="4"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-gV-Sxt">
+                                <rect key="frame" x="20" y="90" width="371" height="460"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kUL-TX-doL">
+                                        <rect key="frame" x="0.0" y="0.0" width="371" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soft-boiled-eggs-feature-5" translatesAutoresizingMaskIntoConstraints="NO" id="aUG-Yk-VMa">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="6Gj-kr-jRt"/>
+                                                    <constraint firstAttribute="width" constant="240" id="LBM-KR-Gch"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1d-aZ-NZI">
+                                                <rect key="frame" x="245" y="58" width="126" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Soft"/>
+                                                <connections>
+                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJP-yk-Ffh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sIj-sc-fzN">
+                                        <rect key="frame" x="0.0" y="155" width="371" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="XRN-cU-PwY">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Ee4-Br-gQg"/>
+                                                    <constraint firstAttribute="width" constant="250" id="kS4-g1-8jS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZc-KN-uDE">
+                                                <rect key="frame" x="255" y="58" width="116" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Medium"/>
+                                                <connections>
+                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADc-Oo-lIq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Web-sr-LIr">
+                                        <rect key="frame" x="0.0" y="310" width="371" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steamed-hard-boiled-egg-hero-b19792d9bf7344978dd043e6a8f9c074" translatesAutoresizingMaskIntoConstraints="NO" id="knc-wC-WjW">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="0XC-gL-QKX"/>
+                                                    <constraint firstAttribute="height" constant="150" id="qrL-F4-t4f"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYD-HS-AWA">
+                                                <rect key="frame" x="255" y="58" width="116" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Hard"/>
+                                                <connections>
+                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fs0-lU-5nd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lci-d6-608">
+                                <rect key="frame" x="97" y="754" width="217" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="7zV-OX-WPt"/>
+                                    <constraint firstAttribute="width" constant="217" id="vdj-le-nTs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eM5-gV-Sxt" firstAttribute="centerX" secondItem="Lci-d6-608" secondAttribute="centerX" id="12P-wK-rTA"/>
+                            <constraint firstItem="Lci-d6-608" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="7zp-py-KGW"/>
+                            <constraint firstItem="49u-Ex-s8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QLG-Kp-E03"/>
+                            <constraint firstItem="eM5-gV-Sxt" firstAttribute="leading" secondItem="49u-Ex-s8a" secondAttribute="leading" id="R1p-Wo-td8"/>
+                            <constraint firstItem="eM5-gV-Sxt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WAP-fl-HcT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="49u-Ex-s8a" secondAttribute="bottom" constant="54" id="ams-X0-dfP"/>
+                            <constraint firstItem="49u-Ex-s8a" firstAttribute="top" secondItem="Lci-d6-608" secondAttribute="bottom" constant="35" id="rxp-BE-mwL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lci-d6-608" secondAttribute="trailing" constant="116" id="s1g-xb-MTf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="49u-Ex-s8a" secondAttribute="trailing" constant="20" id="z2b-hx-Syf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progress" destination="49u-Ex-s8a" id="Tve-H2-fU4"/>
+                        <outlet property="timerLabel" destination="Lci-d6-608" id="qjf-Jl-X5a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="1.4778325123152709"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="soft-boiled-eggs-feature-5" width="1200" height="1200"/>
+        <image name="steamed-hard-boiled-egg-hero-b19792d9bf7344978dd043e6a8f9c074" width="1500" height="1125"/>
+        <image name="unnamed" width="512" height="220"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

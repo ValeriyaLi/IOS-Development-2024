@@ -31,8 +31,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Q7-RQ-2i0">
-                                <rect key="frame" x="151" y="473" width="91" height="35"/>
+                                <rect key="frame" x="106" y="473" width="181" height="35"/>
                                 <color key="backgroundColor" red="0.67677912409999996" green="0.72448272599999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="E1Z-ND-XVn"/>
+                                    <constraint firstAttribute="height" constant="35" id="HUv-Vq-FTb"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="viewFlipsideBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Roll Dice"/>
@@ -48,8 +52,8 @@
                             <constraint firstItem="bFy-wx-5jI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="DWg-2I-L9i"/>
                             <constraint firstItem="bFy-wx-5jI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="226" id="Nej-AX-FU1"/>
                             <constraint firstItem="0kS-HJ-iHp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="226" id="Si0-en-zxY"/>
-                            <constraint firstItem="8Q7-RQ-2i0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="414" id="VuE-V4-ciw"/>
-                            <constraint firstItem="8Q7-RQ-2i0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfi-bc-8lb"/>
+                            <constraint firstItem="8Q7-RQ-2i0" firstAttribute="top" secondItem="bFy-wx-5jI" secondAttribute="bottom" constant="88" id="xbi-d1-pVL"/>
+                            <constraint firstItem="8Q7-RQ-2i0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yNU-ee-TcA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="4"/>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
